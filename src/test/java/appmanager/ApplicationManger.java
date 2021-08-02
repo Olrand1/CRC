@@ -8,6 +8,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
+import pages.ContractorsPage;
+import pages.CreateContractorPage;
+import pages.LoginPage;
 
 import java.io.File;
 import java.io.FileReader;
@@ -20,7 +24,10 @@ public class ApplicationManger {
   public WebDriver webDriver;
   private final Properties properties;
   private String browser;
-  private SessionHelper sessionHelper;
+  private LoginPage sessionHelper;
+  private CreateContractorPage createContractorPage;
+  private ContractorsPage contractorsPage;
+
 
   public ApplicationManger(String browser) {
     this.browser = browser;
@@ -28,7 +35,7 @@ public class ApplicationManger {
   }
 
   public void init() throws IOException {
-    String target = System.getProperty("target","local");
+    String target = System.getProperty("target", "local");
     properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
     if ("".equals(properties.getProperty("selenium.server"))) {
@@ -39,8 +46,7 @@ public class ApplicationManger {
       } else if (browser.equals(BrowserType.IE)) {
         webDriver = new InternetExplorerDriver();
       }
-    }
-    else {
+    } else {
       DesiredCapabilities capabilities = new DesiredCapabilities();
       capabilities.setBrowserName(browser);
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform", "win10")));
@@ -48,15 +54,27 @@ public class ApplicationManger {
     }
     webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     webDriver.get(properties.getProperty("web.baseUrl"));
-    sessionHelper = new SessionHelper(webDriver);
+    sessionHelper = PageFactory.initElements(webDriver, LoginPage.class);
+    createContractorPage = PageFactory.initElements(webDriver, CreateContractorPage.class);
+    contractorsPage = PageFactory.initElements(webDriver, ContractorsPage.class);
+
   }
 
   public void stop() {
     webDriver.quit();
   }
 
-  public SessionHelper getSessionHelper() {
+  public LoginPage getSessionHelper() {
     return sessionHelper;
   }
+
+  public CreateContractorPage createContractorPage() {
+    return createContractorPage;
+  }
+
+  public ContractorsPage contractorsPage() {
+    return contractorsPage;
+  }
+
 
 }

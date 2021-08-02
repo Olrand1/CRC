@@ -1,28 +1,29 @@
 package appmanager;
 
-import org.openqa.selenium.By;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
 public class HelperBase {
 
   protected WebDriver webDriver;
+  private boolean acceptNextAlert = true;
 
   public HelperBase(WebDriver webDriver) {
     this.webDriver = webDriver;
   }
 
-  public void click(By locator) {
-    webDriver.findElement(locator).click();
-  }
-
-  public void type(By locator, String text) {
-    click(locator);
-    if (text != null) {
-      String existingText = webDriver.findElement(locator).getAttribute("value");
-      if (!text.equals(existingText)) {
-        webDriver.findElement(locator).clear();
-        webDriver.findElement(locator).sendKeys(text);
+  public String closeAlertAndGetItsText() {
+    try {
+      Alert alert = webDriver.switchTo().alert();
+      String alertText = alert.getText();
+      if (acceptNextAlert) {
+        alert.accept();
+      } else {
+        alert.dismiss();
       }
+      return alertText;
+    } finally {
+      acceptNextAlert = true;
     }
   }
 
