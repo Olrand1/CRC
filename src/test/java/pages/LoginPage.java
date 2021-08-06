@@ -6,32 +6,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static org.testng.AssertJUnit.assertEquals;
+
 public class LoginPage extends HelperBase {
 
-  @FindBy(xpath = "//input[@name='']")
+  @FindBy(xpath = "//label[text()='Логин']/preceding-sibling::input")
   WebElement loginElement;
-  @FindBy(xpath = "//div[@id='root']/div/div/div[2]/div/form/div[4]/div/input")
+  @FindBy(xpath = "//label[text()='Пароль']/preceding-sibling::input")
   WebElement passwordElement;
-  @FindBy(xpath = "//div[@id='root']/div/div/div[2]/div/form/button")
+  @FindBy(xpath = "//button[text()='Войти']")
   WebElement loginButtonElement;
-  @FindBy(xpath = "//div[@id='root']/div/div[2]/div[3]/div/button")
-  WebElement profileElement;
-  @FindBy(xpath = "//div[@id='root']/div/div[3]/div[5]/div")
-  WebElement logoutElement;
+  @FindBy(xpath = "//*[@id=\"root\"]/div[3]/div[1]/div[2]/div/form/div[3]")
+  WebElement errorMessage;
 
   public LoginPage(WebDriver webDriver) {
     super(webDriver);
   }
 
-  public void login(String username, String password) {
-    loginElement.sendKeys(username);
-    passwordElement.sendKeys(password);
+  public void login(String login, String password) {
+    type(loginElement, login);
+    type(passwordElement, password);
     loginButtonElement.click();
   }
 
-  public void logout() {
-    profileElement.click();
-    logoutElement.click();
+  public void checkMessage(String message) {
+    assertEquals(errorMessage.getText(), message);
   }
 
 }

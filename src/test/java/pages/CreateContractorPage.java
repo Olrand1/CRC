@@ -13,77 +13,57 @@ public class CreateContractorPage extends HelperBase {
     super(webDriver);
   }
 
-  @FindBy(xpath = "//div[@id='root']/div/div[2]/div[2]/div/button/div")
+  @FindBy(xpath = "//div[@id='root']/div/div[3]/form/div/div/div/div")
+  WebElement pageTitle;
+  @FindBy(xpath = "//button//*[text()='Создать']")
   WebElement createMenuButton;
   @FindBy (xpath = "//div[@id='root']/div/div[2]/div[2]/div/div/div[3]")
   WebElement createContractorButton;
-  @FindBy (xpath = "//input[@name='']")
+  @FindBy (xpath = "//label[text()='Наименование полное']/preceding-sibling::input")
   WebElement fullNameContractorElement;
-  @FindBy (xpath = "(//input[@name=''])[2]")
+  @FindBy (xpath = "//label[text()='Наименование краткое (необязательно)']/preceding-sibling::input")
   WebElement shortNameContractorElement;
-  @FindBy ( xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div/div/div/input")
+  @FindBy (xpath = "//label[text()='Категория']/preceding-sibling::input")
   WebElement categoryList;
   @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/div/ul/li")
   WebElement YurCategory;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/ul/li[2]")
+  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/div/ul/li[2]")
   WebElement IPCategory;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/ul/li[3]")
+  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/div/ul/li[3]")
   WebElement PHCategory;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[4]/div/input")
+  @FindBy (xpath = "//label[text()='ИНН']/preceding-sibling::input")
   WebElement innElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[8]/div/input")
+  @FindBy (xpath = "//label[text()='Юридический адрес']/preceding-sibling::input")
   WebElement addressElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[6]/div/input")
+  @FindBy (xpath = "//label[text()='ОГРН']/preceding-sibling::input")
   WebElement OgrnElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div/input")
+  @FindBy (xpath = "//label[text()='ОГРНИП']/preceding-sibling::input")
   WebElement OgrnipElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[7]/div/input")
+  @FindBy (xpath = "//label[text()='КПП']/preceding-sibling::input")
   WebElement kppElement;
   @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div/div/div/input")
   WebElement OPFElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div[2]/div/div/ul/li")
+  @FindBy (xpath = "//*[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div[2]/div/div/div/ul/li[1]")
   WebElement OOOElement;
-  @FindBy (xpath = "//textarea[@name='']")
+  @FindBy (xpath = "//label[text()='Примечание']/preceding-sibling::textarea")
   WebElement noteElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[3]/div/div[2]/div/button/div")
+  @FindBy (xpath = "//*[@id=\"root\"]/div/div[3]/form/div/div[3]/div/button[2]")
   WebElement submitCreateButton;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[12]/div/div/input")
-  WebElement nameYurContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[12]/div[2]/div/input")
-  WebElement phoneYurContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[12]/div[3]/div/input")
-  WebElement emailYurContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[8]/div/div/input")
-  WebElement namePHContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[8]/div[2]/div/input")
-  WebElement phonePHContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[8]/div[3]/div/input")
-  WebElement emailPHContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[11]/div/div/input")
-  WebElement nameIPContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[11]/div[2]/div/input")
-  WebElement phoneIPContact;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[11]/div[3]/div/input")
-  WebElement emailIPContact;
+  @FindBy (xpath = "//label[text()='ФИО']/preceding-sibling::input")
+  WebElement nameContact;
+  @FindBy (xpath = "//label[text()='Телефон']/preceding-sibling::input")
+  WebElement phoneContact;
+  @FindBy (xpath = "//label[text()='Email']/preceding-sibling::input")
+  WebElement emailContact;
+  @FindBy (xpath = "//h4")
+  WebElement successMessage;
 
-  public void fillYurContact (String name, String phone, String email){
-    nameYurContact.sendKeys(name);
-    phoneYurContact.sendKeys(phone);
-    emailYurContact.sendKeys(email);
+  public CreateContractorPage checkTitle (){
+    assertEquals(pageTitle.getText(),"Создание контрагента");
+    return this;
   }
 
-  public void fillIPContact (String name, String phone, String email){
-    nameIPContact.sendKeys(name);
-    phoneIPContact.sendKeys(phone);
-    emailIPContact.sendKeys(email);
-  }
-  public void fillPHContact (String name, String phone, String email){
-    namePHContact.sendKeys(name);
-    phonePHContact.sendKeys(phone);
-    emailPHContact.sendKeys(email);
-  }
-
-  public CreateContractorPage openCreateContractPage() {
+   public CreateContractorPage openCreateContractPage() {
     createMenuButton.click();
     createContractorButton.click();
     return this;
@@ -94,7 +74,8 @@ public class CreateContractorPage extends HelperBase {
     return this;
   }
 
-  public CreateContractorPage fillShortNameContractor(String shortNameContractor) {
+  public CreateContractorPage fillNameContractor(String fullNameContractor, String shortNameContractor) {
+    fullNameContractorElement.sendKeys(fullNameContractor);
     shortNameContractorElement.sendKeys(shortNameContractor);
     return this;
   }
@@ -129,28 +110,37 @@ public class CreateContractorPage extends HelperBase {
   }
 
   public CreateContractorPage fillOgrn(String ogrn) {
-    OgrnElement.click();
+    OgrnElement.sendKeys(ogrn);
     return this;
   }
 
-  public CreateContractorPage fillOgrnip(String ogrn) {
-    OgrnipElement.click();
+  public CreateContractorPage fillOgrnip(String ogrnip) {
+    OgrnipElement.sendKeys(ogrnip);
     return this;
   }
 
   public CreateContractorPage fillKpp(String kpp) {
-    kppElement.click();
+    kppElement.sendKeys(kpp);
     return this;
   }
 
   public CreateContractorPage fillAddress(String address) {
-    addressElement.click();
+    addressElement.sendKeys(address);
     return this;
   }
 
   public CreateContractorPage fillNote(String note) {
-    noteElement.click();
+    noteElement.sendKeys(note);
     return this;
+  }
+  public void fillContact (String name, String phone, String email){
+    type(nameContact, name);
+    type(phoneContact, phone);
+    type(emailContact, email);
+  }
+  public void fillContact (String name, String email){
+    type(nameContact, name);
+    type(emailContact, email);
   }
 
   public CreateContractorPage submitCreateContractor() {
@@ -168,8 +158,10 @@ public class CreateContractorPage extends HelperBase {
   }
 
   public CreateContractorPage checkCreateContractorMessage() {
-    assertEquals(closeAlertAndGetItsText(), "Контрагент успешно создан!");
+    assertEquals(successMessage.getText(), "Контрагент успешно создан!");
     return this;
   }
 }
+
+
 

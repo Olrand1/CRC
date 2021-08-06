@@ -2,29 +2,29 @@ package appmanager;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 public class HelperBase {
 
   protected WebDriver webDriver;
-  private boolean acceptNextAlert = true;
 
   public HelperBase(WebDriver webDriver) {
     this.webDriver = webDriver;
   }
 
-  public String closeAlertAndGetItsText() {
-    try {
-      Alert alert = webDriver.switchTo().alert();
-      String alertText = alert.getText();
-      if (acceptNextAlert) {
-        alert.accept();
-      } else {
-        alert.dismiss();
-      }
-      return alertText;
-    } finally {
-      acceptNextAlert = true;
-    }
+  public void checkPage(String url){
+    assertEquals(webDriver.getCurrentUrl(), url);
+  }
+
+  public void goTo(String url){
+    webDriver.get(url);
+  }
+
+  public void type(WebElement webElement, String value){
+    webElement.clear();
+    webElement.sendKeys(value);
   }
 
 }

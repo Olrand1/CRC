@@ -9,6 +9,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
+import pages.ContractorPage;
 import pages.ContractorsPage;
 import pages.CreateContractorPage;
 import pages.LoginPage;
@@ -23,11 +24,11 @@ import java.util.concurrent.TimeUnit;
 public class ApplicationManger {
   public WebDriver webDriver;
   private final Properties properties;
+  public LoginPage loginPage;
   private String browser;
-  private LoginPage sessionHelper;
   private CreateContractorPage createContractorPage;
   private ContractorsPage contractorsPage;
-
+  private ContractorPage contractorPage;
 
   public ApplicationManger(String browser) {
     this.browser = browser;
@@ -53,10 +54,12 @@ public class ApplicationManger {
       webDriver = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
     }
     webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+    webDriver.manage().window().maximize();
     webDriver.get(properties.getProperty("web.baseUrl"));
-    sessionHelper = PageFactory.initElements(webDriver, LoginPage.class);
+    loginPage = PageFactory.initElements(webDriver, LoginPage.class);
     createContractorPage = PageFactory.initElements(webDriver, CreateContractorPage.class);
     contractorsPage = PageFactory.initElements(webDriver, ContractorsPage.class);
+    contractorPage = PageFactory.initElements(webDriver, ContractorPage.class);
 
   }
 
@@ -64,8 +67,8 @@ public class ApplicationManger {
     webDriver.quit();
   }
 
-  public LoginPage getSessionHelper() {
-    return sessionHelper;
+  public LoginPage loginPage() {
+    return loginPage;
   }
 
   public CreateContractorPage createContractorPage() {
@@ -76,5 +79,8 @@ public class ApplicationManger {
     return contractorsPage;
   }
 
+  public ContractorPage contractorPage() {
+    return contractorPage;
+  }
 
 }
