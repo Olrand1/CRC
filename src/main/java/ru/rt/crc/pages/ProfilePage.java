@@ -1,7 +1,7 @@
-package pages;
+package ru.rt.crc.pages;
 
-import appmanager.HelperBase;
 import org.openqa.selenium.WebDriver;
+import ru.rt.crc.appmanager.HelperBase;
 
 public class ProfilePage extends HelperBase {
 

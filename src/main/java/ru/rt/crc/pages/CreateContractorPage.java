@@ -1,13 +1,14 @@
-package pages;
+package ru.rt.crc.pages;
 
-import appmanager.HelperBase;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ru.rt.crc.appmanager.HelperBase;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class CreateContractorPage extends HelperBase {
+public class CreateContractorPage<contractorName> extends HelperBase {
 
   public CreateContractorPage(WebDriver webDriver) {
     super(webDriver);
@@ -159,6 +160,11 @@ public class CreateContractorPage extends HelperBase {
 
   public CreateContractorPage checkCreateContractorMessage() {
     assertEquals(successMessage.getText(), "Контрагент успешно создан!");
+    return this;
+  }
+
+  public CreateContractorPage checkEditContractorMessage() {
+    assertEquals(successMessage.getText(), "Контрагент успешно сохранен!");
     return this;
   }
 }

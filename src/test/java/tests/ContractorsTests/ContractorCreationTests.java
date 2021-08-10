@@ -1,9 +1,9 @@
-package tests;
+package tests.ContractorsTests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import tests.TestBase;
 
 public class ContractorCreationTests extends TestBase {
 
@@ -30,7 +30,6 @@ public class ContractorCreationTests extends TestBase {
     Thread.sleep(3000);
     app.createContractorPage().openCreateContractPage()
             .fillFullNameContractor("Тест")
-            .fillNameContractor("Тест", "Tecт")
             .selectIPCategory()
             .fillInn("123465789912")
             .fillOgrnip("1234657899")

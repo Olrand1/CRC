@@ -1,4 +1,4 @@
-package appmanager;
+package ru.rt.crc.appmanager;
 
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -9,10 +9,7 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
-import pages.ContractorPage;
-import pages.ContractorsPage;
-import pages.CreateContractorPage;
-import pages.LoginPage;
+import ru.rt.crc.pages.*;
 
 import java.io.File;
 import java.io.FileReader;
@@ -21,7 +18,7 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-public class ApplicationManger {
+public class ApplicationManager {
   public WebDriver webDriver;
   private final Properties properties;
   public LoginPage loginPage;
@@ -29,15 +26,17 @@ public class ApplicationManger {
   private CreateContractorPage createContractorPage;
   private ContractorsPage contractorsPage;
   private ContractorPage contractorPage;
+  private CreateDocumentPage createDocumentPage;
+  private Dashboard dashboardPage;
 
-  public ApplicationManger(String browser) {
+  public ApplicationManager(String browser) {
     this.browser = browser;
     properties = new Properties();
   }
 
   public void init() throws IOException {
     String target = System.getProperty("target", "local");
-    properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+    properties.load(new FileReader(new File(String.format("src/main/resources/%s.properties", target))));
 
     if ("".equals(properties.getProperty("selenium.server"))) {
       if (browser.equals(BrowserType.FIREFOX)) {
@@ -60,7 +59,8 @@ public class ApplicationManger {
     createContractorPage = PageFactory.initElements(webDriver, CreateContractorPage.class);
     contractorsPage = PageFactory.initElements(webDriver, ContractorsPage.class);
     contractorPage = PageFactory.initElements(webDriver, ContractorPage.class);
-
+    dashboardPage = PageFactory.initElements(webDriver, Dashboard.class);
+    createDocumentPage = PageFactory.initElements(webDriver, CreateDocumentPage.class);
   }
 
   public void stop() {
@@ -81,6 +81,14 @@ public class ApplicationManger {
 
   public ContractorPage contractorPage() {
     return contractorPage;
+  }
+
+  public CreateDocumentPage createDocumentPage() {
+    return createDocumentPage;
+  }
+
+  public Dashboard dashboardPage() {
+    return dashboardPage;
   }
 
 }

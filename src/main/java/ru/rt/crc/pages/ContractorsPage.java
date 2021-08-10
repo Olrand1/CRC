@@ -1,10 +1,9 @@
-package pages;
+package ru.rt.crc.pages;
 
-import appmanager.ApplicationManger;
-import appmanager.HelperBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ru.rt.crc.appmanager.HelperBase;
 
 import static org.testng.AssertJUnit.assertEquals;
 

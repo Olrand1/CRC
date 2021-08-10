@@ -1,19 +1,19 @@
-package pages;
+package ru.rt.crc.pages;
 
-import appmanager.HelperBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ru.rt.crc.appmanager.HelperBase;
 
 import static org.testng.AssertJUnit.assertEquals;
 
-public class ContractorPage extends HelperBase  {
+public class ContractorPage extends HelperBase {
 
   public ContractorPage(WebDriver webDriver) {
     super(webDriver);
   }
 
-  String URL =  "http://crc-staging.dev.digital.rt.ru/contractors/contractor_card/209";
+  String URL =  "http://crc-staging.dev.digital.rt.ru/contractors/contractor_card/";
 
   @FindBy(className = "ContractorCardSidebar_title__1PHAR")
   WebElement fullNameContractorElement;
@@ -52,8 +52,8 @@ public class ContractorPage extends HelperBase  {
   @FindBy(xpath = "//button//*[text()='Редактировать']")
   WebElement editButton;
 
-  public ContractorPage openPage(){
-    goTo(URL);
+  public ContractorPage openPage(int id){
+    goTo(URL+id);
     return this;
   }
 

@@ -20,18 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorEditTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/ExpenditureContractCreateTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/SessionControllerTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ContractorsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ContractorsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CreateContractorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CreateContractorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorCreationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorEditTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorEditTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ContractorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/ContractorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ContractorsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/ContractorsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CreateContractorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateContractorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorEditTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorViewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorViewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorsPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DocumentCreateTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DocumentEditTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TasksApiTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,13 +129,18 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../JavaLearning" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.TasksApiTests.getMyTasks">
-    <configuration name="ContractorCreationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ContractCreateTests.createContract">
+    <configuration name="ContractCreateTests.createContract" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContractorCreationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.DocumentsTests.ContractCreateTests.createContract&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -140,12 +154,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContractorViewTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContractorViewTests.viewYurContractors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContractorViewTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContractorViewTests.viewYurContractors&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -159,12 +173,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TasksApiTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SessionControllerTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.TasksApiTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.api.SessionControllerTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -178,12 +192,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TasksApiTests.getMyTasks" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SessionControllerTests.blockedUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.TasksApiTests.getMyTasks&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.api.SessionControllerTests.blockedUser&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -197,12 +211,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SessionControllerTests.failLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.*&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.api.SessionControllerTests.failLogin&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -218,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TasksApiTests.getMyTasks" />
-        <item itemvalue="Gradle.TasksApiTests" />
-        <item itemvalue="Gradle.Tests in 'tests'" />
-        <item itemvalue="Gradle.ContractorViewTests" />
-        <item itemvalue="Gradle.ContractorCreationTests" />
+        <item itemvalue="Gradle.ContractCreateTests.createContract" />
+        <item itemvalue="Gradle.ContractorViewTests.viewYurContractors" />
+        <item itemvalue="Gradle.SessionControllerTests" />
+        <item itemvalue="Gradle.SessionControllerTests.blockedUser" />
+        <item itemvalue="Gradle.SessionControllerTests.failLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -260,6 +274,10 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="675" y="186" key="#com.intellij.ide.util.MemberChooser/0.0.1739.939@0.0.1739.939" timestamp="1628073304680" />
+    <state x="544" y="395" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628250548562">
+      <screen x="0" y="0" width="1739" height="939" />
+    </state>
+    <state x="544" y="395" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1739.939@0.0.1739.939" timestamp="1628250548562" />
     <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627895646882">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -268,26 +286,26 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="600" y="217" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1739.939@0.0.1739.939" timestamp="1627895781585" />
-    <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1628082123430">
+    <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1628581753739">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1628082123430" />
-    <state width="1696" height="231" key="GridCell.Tab.0.bottom" timestamp="1628249418463">
+    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1628581753739" />
+    <state width="1696" height="197" key="GridCell.Tab.0.bottom" timestamp="1628588462327">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="231" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1628249418463" />
-    <state width="1696" height="231" key="GridCell.Tab.0.center" timestamp="1628249418463">
+    <state width="1696" height="197" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1628588462327" />
+    <state width="1696" height="197" key="GridCell.Tab.0.center" timestamp="1628588462327">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="231" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1628249418463" />
-    <state width="1696" height="231" key="GridCell.Tab.0.left" timestamp="1628249418462">
+    <state width="1696" height="197" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1628588462327" />
+    <state width="1696" height="197" key="GridCell.Tab.0.left" timestamp="1628588462327">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="231" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1628249418462" />
-    <state width="1696" height="231" key="GridCell.Tab.0.right" timestamp="1628249418463">
+    <state width="1696" height="197" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1628588462327" />
+    <state width="1696" height="197" key="GridCell.Tab.0.right" timestamp="1628588462327">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="231" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1628249418463" />
+    <state width="1696" height="197" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1628588462327" />
     <state x="595" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1628074494411">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -304,13 +322,13 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="577" y="218" key="refactoring.ChangeSignatureDialog/0.0.1739.939@0.0.1739.939" timestamp="1627894326132" />
-    <state x="527" y="216" key="run.anything.popup" timestamp="1627647126368">
+    <state x="527" y="216" key="run.anything.popup" timestamp="1628267552946">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="527" y="216" key="run.anything.popup/0.0.1739.939@0.0.1739.939" timestamp="1627647126368" />
-    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup" timestamp="1628073941194">
+    <state x="527" y="216" key="run.anything.popup/0.0.1739.939@0.0.1739.939" timestamp="1628267552946" />
+    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup" timestamp="1628580243585">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup/0.0.1739.939@0.0.1739.939" timestamp="1628073941194" />
+    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup/0.0.1739.939@0.0.1739.939" timestamp="1628580243585" />
   </component>
 </project>

@@ -1,10 +1,9 @@
-package pages;
+package ru.rt.crc.pages;
 
-import appmanager.HelperBase;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import ru.rt.crc.appmanager.HelperBase;
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -16,7 +15,7 @@ public class LoginPage extends HelperBase {
   WebElement passwordElement;
   @FindBy(xpath = "//button[text()='Войти']")
   WebElement loginButtonElement;
-  @FindBy(xpath = "//*[@id=\"root\"]/div[3]/div[1]/div[2]/div/form/div[3]")
+  @FindBy(xpath = "//*[@id='root']/div[3]/div[1]/div[2]/div/form/div[3]")
   WebElement errorMessage;
 
   public LoginPage(WebDriver webDriver) {

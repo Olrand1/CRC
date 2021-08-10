@@ -1,10 +1,11 @@
-package tests;
+package tests.ContractorsTests;
 
 import org.testng.annotations.Test;
+import tests.TestBase;
 
-public class ContractorsPageTests extends TestBase{
+public class ContractorsPageTests extends TestBase {
 
-  /*@Test
+  @Test
   public void filterContractors() throws InterruptedException {
     Thread.sleep(3000);
     app.loginPage().login("nikitina-ar", "qwerty");
@@ -12,6 +13,6 @@ public class ContractorsPageTests extends TestBase{
     app.contractorsPage().goToContactorsPage();
     app.contractorsPage().checkTittle();
     app.contractorsPage().checkNameFilter("Тест");
-  }*/
+  }
 
 }
