@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.rt.crc.appmanager.HelperBase;
+import ru.rt.crc.model.Address;
 
 public class CreateDocumentPage extends HelperBase {
 
@@ -13,16 +14,13 @@ public class CreateDocumentPage extends HelperBase {
   }
 
   protected final String  createMenuButton = "Создать";
+
   @FindBy (xpath = "//*[text()='Документ']")
   WebElement createDocumentButton;
-  @FindBy(className = "SidebarFormHeader_title__39UKf")
-  WebElement pageTitle;
   @FindBy(xpath = "//div[@class=\'CreateDocumentSidebar_addFile__idhu3\']/span")
   WebElement addFile;
   @FindBy (xpath = "//input[@type=\"file\"]")
   WebElement addFileElement;
-  @FindBy(xpath = "//span[text()='Рамочный']/preceding-sibling::input")
-  WebElement isFramedElement;
 
   protected final String addFileButton = "Добавить";
   protected final String nextPageButton = "Далее";
@@ -33,6 +31,8 @@ public class CreateDocumentPage extends HelperBase {
   protected final String typeExpenditureContract = "Договор";
 
   // Шаг с общими данными
+  protected final String isFramedLabel = "Рамочный";
+  protected final String eventEndLabel = "Неизвестна дата окончания действия";
   protected final String departmentLabel = "Департамент";
   protected final String contractTypeLabel = "Вид договора";
   //Виды договора
@@ -44,7 +44,7 @@ public class CreateDocumentPage extends HelperBase {
   protected final String locationTypeLabel = "Укажите тип населенного пункта";
   protected final String locationLabel = "Населённый пункт";
   protected final String addressTypeLabel = "Тип адреса";
-  protected final String addressTLabel = "Адрес";
+  protected final String addressLabel = "Адрес";
   protected final String rentAreaLabel = "Арендуемая площадь, м²";
 
   // Шаг Контрагент
@@ -108,4 +108,23 @@ public class CreateDocumentPage extends HelperBase {
     clickButton(sentToAgreementButton);
   }
 
+  public void fillAddress(String locationType, String location){
+    select(locationTypeLabel, locationType);
+    type(locationLabel, location);
+  }
+
+  public void fillAddress(String locationType, String location, String addressType, String address){
+    select(locationTypeLabel, locationType);
+    type(locationLabel, location);
+    select(addressTypeLabel, addressType);
+    type(addressLabel, address);
+  }
+
+  public void fillAddress(String locationType, String location, String addressType, String address, String rentArea){
+    select(locationTypeLabel, locationType);
+    type(locationLabel, location);
+    select(addressTypeLabel, addressType);
+    type(addressLabel, address);
+    type(rentAreaLabel, rentArea);
+  }
 }

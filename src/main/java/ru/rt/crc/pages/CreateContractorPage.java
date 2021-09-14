@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.rt.crc.appmanager.HelperBase;
+import ru.rt.crc.model.Contact;
 
 import static org.testng.AssertJUnit.assertEquals;
 

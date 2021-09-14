@@ -1,6 +1,5 @@
 package tests.DocumentsTests;
 
-import io.qameta.allure.Step;
 import org.testng.annotations.Test;
 import tests.TestBase;
 
@@ -20,8 +19,15 @@ public class ExpenditureContractCreateTests extends TestBase {
     Thread.sleep(30000);
     app.createDocumentPage().fillMaxSum("60000");
     app.createDocumentPage().goToNextStep();
-    //app.createDocumentPage().sentToAgreement();
+    app.createDocumentPage().sentToAgreement();
+  }
+
+  @Test(dependsOnMethods = "createContractWithoutAddress")
+  public void createTaskForAgreement() throws InterruptedException {
     Thread.sleep(3000);
+    app.createTaskPage().selectRoute("Согласование договоров");
+    app.createTaskPage().selectSigning("Бумажное");
+    app.createTaskPage().sendTasksToAgreement();
   }
 
 }

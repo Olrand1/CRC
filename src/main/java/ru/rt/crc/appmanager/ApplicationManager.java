@@ -27,6 +27,7 @@ public class ApplicationManager {
   private ContractorsPage contractorsPage;
   private ContractorPage contractorPage;
   private CreateDocumentPage createDocumentPage;
+  private CreateTaskPage createTaskPage;
   private Dashboard dashboardPage;
 
   public ApplicationManager(String browser) {
@@ -61,6 +62,7 @@ public class ApplicationManager {
     contractorPage = PageFactory.initElements(webDriver, ContractorPage.class);
     dashboardPage = PageFactory.initElements(webDriver, Dashboard.class);
     createDocumentPage = PageFactory.initElements(webDriver, CreateDocumentPage.class);
+    createTaskPage = PageFactory.initElements(webDriver, CreateTaskPage.class);
   }
 
   public void stop() {
@@ -85,6 +87,10 @@ public class ApplicationManager {
 
   public CreateDocumentPage createDocumentPage() {
     return createDocumentPage;
+  }
+
+  public CreateTaskPage createTaskPage() {
+    return createTaskPage;
   }
 
   public Dashboard dashboardPage() {

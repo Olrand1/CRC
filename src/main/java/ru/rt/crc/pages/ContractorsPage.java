@@ -15,7 +15,7 @@ public class ContractorsPage extends HelperBase {
   WebElement titleContractorsPage;
   @FindBy(xpath = "//input[@value='']")
   WebElement nameFilter;
-  @FindBy(xpath = "//div[@id='root']/div/div[3]/div/div[2]/div[2]/div[2]/div/div/div")
+  @FindBy(xpath = "//*[text()='Выберите категорию']/preceding-sibling::div")
   WebElement categoryElement;
 
   public ContractorsPage(WebDriver webDriver) {
