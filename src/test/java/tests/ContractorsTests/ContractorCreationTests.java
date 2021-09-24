@@ -2,6 +2,7 @@ package tests.ContractorsTests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import tests.TestBase;
 

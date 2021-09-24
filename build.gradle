@@ -12,10 +12,8 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
     implementation 'org.hamcrest:java-hamcrest:2.0.0.0'
     implementation 'com.beust:jcommander:1.78'
-    implementation 'com.google.code.gson:gson:2.8.6'
     compile 'com.thoughtworks.xstream:xstream:1.4.8'
     implementation 'ch.qos.logback:logback-classic:1.2.3'
-    implementation 'mysql:mysql-connector-java:8.0.19'
     implementation 'org.hibernate:hibernate-core:5.4.14.Final'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'org.apache.httpcomponents:httpclient:4.5.12'
@@ -23,6 +21,7 @@ dependencies {
     implementation 'com.jayway.restassured:rest-assured:2.9.0'
     implementation 'io.qameta.allure:allure-testng:2.14.0'
     implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5'
+    implementation 'org.projectlombok:lombok:1.18.20'
 }
 
 test {
