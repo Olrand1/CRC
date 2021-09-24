@@ -49,4 +49,35 @@ public class ContractorViewTests extends TestBase {
     app.contractorPage().closePage();
   }
 
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Просмотр контрагента")
+  @Test(priority = 8)
+  public void viewPhContractors() throws InterruptedException {
+    int contractorId = 306;
+    app.contractorPage().openPage(contractorId);
+    Thread.sleep(3000);
+    app.contractorPage().checkTitle("hello","21.09.2021")
+            .checkShortNameContractor("hi")
+            .checkCategory("ФЛ")
+            .checkInn("567475685485")
+            .checkResponsibleRTK("Архипов Владислав Дмитриевич")
+            .checkNote("").checkContact("hello guy","","l@maal.ru");
+    app.contractorPage().closePage();
+  }
+
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Просмотр контрагента")
+  @Test(priority = 8)
+  public void viewSEContractors() throws InterruptedException {
+    int contractorId = 287;
+    app.contractorPage().openPage(contractorId);
+    Thread.sleep(3000);
+    app.contractorPage().checkTitle("arthas","11.09.2021")
+            .checkShortNameContractor("best")
+            .checkCategory("Самозанятый")
+            .checkInn("141241212242")
+            .checkResponsibleRTK("Антонов Андрей Игоревич")
+            .checkNote("").checkContact("1241","+7 124 124-12-42","24@mail.ru");
+    app.contractorPage().closePage();
+  }
 }
