@@ -1,34 +1,21 @@
 package tests;
 
-import com.google.gson.Gson;
 import io.qameta.allure.Feature;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import ru.rt.crc.model.LoginData;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class LoginTests extends TestBase {
 
-  @DataProvider
-  public Object[][] getLoginData() {
-    Object[][] loginData = {{"nikitina-ar", "fail_password", "Неверный логин или пароль"}};
-    return loginData;
-  }
-
+  @Parameters ({"correct_login", "fail_password"})
   @Feature(value = "Авторизация")
-  @Test(priority = 1, dataProvider = "getLoginData")
-  public void invalidPassword(String login, String password, String message) throws InterruptedException {
+  @Test(priority = 1)
+  public void invalidPassword(String login, String password) throws InterruptedException {
     app.loginPage.login(login, password);
     Thread.sleep(600);
-    app.loginPage.checkMessage(message);
+    app.loginPage.checkMessage("Неверный логин или пароль");
   }
 
-  @Parameters ({"block_user", "password"})
+  @Parameters ({"block_user", "correct_password"})
   @Feature(value = "Авторизация")
   @Test(priority = 2)
   public void blockUser(String login, String password) {
@@ -36,7 +23,7 @@ public class LoginTests extends TestBase {
     app.loginPage.checkMessage("Пользователь с логином block_user заблокирован");
   }
 
-  @Parameters ({"fail_user", "password"})
+  @Parameters ({"fail_user", "correct_password"})
   @Feature(value = "Авторизация")
   @Test(priority = 3)
   public void nonExistUser(String login, String password) {
@@ -44,24 +31,9 @@ public class LoginTests extends TestBase {
     app.loginPage.checkMessage("Пользователь с логином fail_user не найден");
   }
 
-  @DataProvider
-  public Object getLoginData2() throws IOException {
-    try (BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/java/resources/loginData.json")))) {
-      String json = "";
-      String line = reader.readLine();
-      while (line != null) {
-        json += line;
-        line = reader.readLine();
-      }
-      Gson gson = new Gson();
-      Object loginData = gson.fromJson(json, LoginData.class);
-      System.out.println(loginData);
-      return loginData;
-    }
-  }
-
+  @Parameters ({"correct_login", "correct_password"})
   @Feature(value = "Авторизация")
-  @Test(priority = 4, dataProvider = "getLoginData2")
+  @Test(priority = 4)
   public void newSessionInnerUser(String login, String password) throws InterruptedException {
     app.loginPage.login(login, password);
     Thread.sleep(500);

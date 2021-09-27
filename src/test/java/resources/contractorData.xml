@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="LoginSuite">
+    <parameter name="yur_contractor_id" value="209"></parameter>
+    <parameter name="ph_contractor_id" value="209"></parameter>
+    <parameter name="ip_contractor_id" value="209"></parameter>
+    <parameter name="se_contractor_id" value="209"></parameter>
+    <parameter name="yur_contractor_name" value="Тест"></parameter>
+    <parameter name="yur_contractor_inn" value="1234657899"></parameter>
+    <parameter name="yur_contractor_ogrn" value="1234567890123"></parameter>
+    <parameter name="yur_contractor_kpp" value="123456789"></parameter>
+    <parameter name="yur_contractor_address" value="г. Пермь 80"></parameter>
+    <parameter name="yur_contractor_note" value="Примечание"></parameter>
+
+    <test name="LoginTests">
+        <classes>
+            <class name="tests.ContractorsTests.ContractorEditTests"/>
+        </classes>
+    </test>
+</suite>

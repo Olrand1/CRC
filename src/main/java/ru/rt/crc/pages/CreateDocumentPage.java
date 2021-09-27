@@ -1,27 +1,26 @@
 package ru.rt.crc.pages;
 
 import io.qameta.allure.Step;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import ru.rt.crc.appmanager.HelperBase;
-import ru.rt.crc.model.Address;
 
 public class CreateDocumentPage extends HelperBase {
 
   public CreateDocumentPage(WebDriver webDriver) {
     super(webDriver);
   }
-
-  protected final String  createMenuButton = "Создать";
-
+  
   @FindBy (xpath = "//*[text()='Документ']")
   WebElement createDocumentButton;
-  @FindBy(xpath = "//div[@class=\'CreateDocumentSidebar_addFile__idhu3\']/span")
+  @FindBy(xpath = "//div[@class='CreateDocumentFiles_addFile__ae-pW']/span")
   WebElement addFile;
   @FindBy (xpath = "//input[@type=\"file\"]")
   WebElement addFileElement;
 
+  protected final String  createMenuButton = "Создать";
   protected final String addFileButton = "Добавить";
   protected final String nextPageButton = "Далее";
   protected final String sentToAgreementButton = "Отправить на согласование";
@@ -34,10 +33,6 @@ public class CreateDocumentPage extends HelperBase {
   protected final String isFramedLabel = "Рамочный";
   protected final String eventEndLabel = "Неизвестна дата окончания действия";
   protected final String departmentLabel = "Департамент";
-  protected final String contractTypeLabel = "Вид договора";
-  //Виды договора
-  protected final String expenditureTypeOfContract = "Расходный";
-  protected final String profitableTypeOfContract = "Доходный";
   protected final String subjectDocLabel = "Предмет договора";
   protected final String subjectSpecLabel = "Конкретизация предмета";
   // Адрес
@@ -48,7 +43,8 @@ public class CreateDocumentPage extends HelperBase {
   protected final String rentAreaLabel = "Арендуемая площадь, м²";
 
   // Шаг Контрагент
-  protected final String contractorLabel = "Контрагент";
+  @FindBy (xpath = "//div[@id='root']/div[3]/div[3]/form/div/div[2]/div/div/div/div/div/div/div/div")
+  WebElement contractorInput;
   protected final String contactNameOfContractorLabel = "ФИО";
   protected final String contactEmailOfContractorLabel = "Email";
   protected final String contactPhoneOfContractorLabel = "Телефон";
@@ -70,6 +66,7 @@ public class CreateDocumentPage extends HelperBase {
   protected final String monthSumLabel = "Сумма ежемесячного платежа без НДС";
   protected final String monthSumNdsLabel = "Сумма ежемесячного платежа с НДС";
 
+  @Step("Переход в карточку создания документа")
   public CreateDocumentPage openCreateContractPage() {
     clickButton(createMenuButton);
     createDocumentButton.click();
@@ -90,14 +87,17 @@ public class CreateDocumentPage extends HelperBase {
     clickButton(nextPageButton);
   }
 
+  @Step("Добавление основной информации по договору")
   public void fillCommonExpenditureContractData(String department, String subject){
     select(departmentLabel, department);
-    select(contractTypeLabel, expenditureTypeOfContract);
     select(subjectDocLabel, subject);
   }
 
+  @Step("Выбор контрагента")
   public void selectContractor(String contractorName){
-    select(contractorLabel, contractorName);
+    contractorInput.click();
+    webDriver.findElement(By.id("react-select-2-option-1")).click();
+    //webDriver.findElement(By.xpath("xpath=//*/text()[normalize-space(.)='" + contractorName + "']/parent::*")).click();
   }
 
   public void fillMaxSum(String sum){

@@ -1,10 +1,10 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="LoginSuite">
-    <parameter name="innerUser" value="nikitina-ar"></parameter>
+    <parameter name="correct_login" value="nikitina-ar"></parameter>
     <parameter name="block_user" value="block_user"></parameter>
     <parameter name="fail_user" value="fail_user"></parameter>
-    <parameter name="password" value="qwerty"></parameter>
+    <parameter name="correct_password" value="qwerty"></parameter>
     <parameter name="fail_password" value="fail_password"></parameter>
     <test name="LoginTests">
         <classes>
