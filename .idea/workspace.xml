@@ -26,8 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/conf.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,6 +243,7 @@
       <updated>1615874678500</updated>
       <workItem from="1632473309757" duration="1447000" />
       <workItem from="1632656996357" duration="7884000" />
+      <workItem from="1632738683738" duration="433000" />
     </task>
     <servers />
   </component>
@@ -298,26 +299,26 @@
     </state>
     <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1632301468582" />
     <state x="718" y="249" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632473347456" />
-    <state width="1261" height="192" key="GridCell.Tab.0.bottom" timestamp="1632663128358">
+    <state width="1244" height="189" key="GridCell.Tab.0.bottom" timestamp="1632739110820">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1696" height="198" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1261" height="192" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1632663128358" />
-    <state width="1261" height="192" key="GridCell.Tab.0.center" timestamp="1632663128358">
+    <state width="1244" height="189" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1632739110820" />
+    <state width="1244" height="189" key="GridCell.Tab.0.center" timestamp="1632739110819">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1696" height="198" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1261" height="192" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1632663128358" />
-    <state width="1261" height="192" key="GridCell.Tab.0.left" timestamp="1632663128358">
+    <state width="1244" height="189" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1632739110819" />
+    <state width="1244" height="189" key="GridCell.Tab.0.left" timestamp="1632739110817">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1696" height="198" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1632467776043" />
-    <state width="1261" height="192" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1632663128358" />
-    <state width="1261" height="192" key="GridCell.Tab.0.right" timestamp="1632663128358">
+    <state width="1244" height="189" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1632739110817" />
+    <state width="1244" height="189" key="GridCell.Tab.0.right" timestamp="1632739110820">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state width="1696" height="198" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1261" height="192" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1632663128358" />
+    <state width="1244" height="189" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1632739110820" />
     <state width="1696" height="308" key="GridCell.Tab.1.bottom" timestamp="1632305913292">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -334,11 +335,11 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state width="1696" height="308" key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state x="326" y="0" key="SettingsEditor" timestamp="1632659558721">
+    <state x="326" y="0" key="SettingsEditor" timestamp="1632738809189">
       <screen x="62" y="0" width="1304" height="768" />
     </state>
     <state x="379" y="89" key="SettingsEditor/0.0.1739.939@0.0.1739.939" timestamp="1632205487545" />
-    <state x="326" y="0" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1632659558721" />
+    <state x="326" y="0" key="SettingsEditor/62.0.1304.768@62.0.1304.768" timestamp="1632738809189" />
     <state x="687" y="248" key="chooseDestDirectoryDialog" timestamp="1632157818825">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -363,6 +364,17 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="532" y="200" width="672" height="678" key="search.everywhere.popup/0.0.1739.939@0.0.1739.939" timestamp="1628580243585" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorCreationTests.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CRC_Tests$C__Users_1283181_Documents_GitHub_CRC_Tests_src_test_java_resources_loginData_xml.ic" NAME="$PROJECT_DIR$/src/test/java/resources/loginData.xml Coverage Results" MODIFIED="1632205456255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
