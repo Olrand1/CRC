@@ -21,12 +21,16 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="" />
+    <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/DocumentPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/DocumentViewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/ApplicationManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +123,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
@@ -230,7 +234,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615874678500</updated>
-      <workItem from="1632473309757" duration="1447000" />
+      <workItem from="1632473309757" duration="3001000" />
+      <workItem from="1632735138867" duration="3187000" />
+      <workItem from="1632892744049" duration="2397000" />
     </task>
     <servers />
   </component>
@@ -242,19 +248,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -326,10 +320,15 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state width="1696" height="308" key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state x="379" y="89" key="SettingsEditor" timestamp="1632205487545">
-      <screen x="0" y="0" width="1739" height="939" />
+    <state x="418" y="99" key="SettingsEditor" timestamp="1632738535914">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="379" y="89" key="SettingsEditor/0.0.1739.939@0.0.1739.939" timestamp="1632205487545" />
+    <state x="418" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1632738535914" />
+    <state x="536" y="240" key="Vcs.Push.Dialog.v2" timestamp="1632475404380">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1632475404380" />
     <state x="687" y="248" key="chooseDestDirectoryDialog" timestamp="1632157818825">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
@@ -338,6 +337,14 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="595" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1739.939@0.0.1739.939" timestamp="1628074494411" />
+    <state x="753" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632475044392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="753" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1632475044392" />
+    <state x="659" y="0" width="1277" height="983" key="dock-window-1" timestamp="1632898720556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="659" y="0" width="1277" height="983" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1632898720556" />
     <state x="584" y="66" width="575" height="873" key="find.popup" timestamp="1627287979714">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
