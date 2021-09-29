@@ -21,28 +21,42 @@ public class ContractorEditTests extends TestBase {
   @Test
   public void editPHContractors() {
     app.contractorPage()      .openPage(209)
-            .editContractor();
+                              .editContractor();
     app.createContractorPage().fillFullNameContractor("Тест")
-            .selectPHCategory()
-            .fillInn("1234657899");
+                              .selectPHCategory()
+                              .fillInn("1234657899");
     app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
     app.createContractorPage().fillNote("Примечание")
-            .submitCreateContractor()
-            .checkEditContractorMessage();
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
   }
 
   @Test
   public void editIPContractors() {
     app.contractorPage()      .openPage(209)
-            .editContractor();
+                              .editContractor();
     app.createContractorPage().fillFullNameContractor("Тест")
-            .selectIPCategory()
-            .fillInn("123465789912")
-            .fillOgrnip("1234657899");
+                              .selectIPCategory()
+                              .fillInn("123465789912")
+                              .fillOgrnip("1234657899");
     app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
     app.createContractorPage().fillNote("Примечание")
-            .submitCreateContractor()
-            .checkEditContractorMessage();
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
   }
+
+  @Test
+  public void editSEContractors() {
+    app.contractorPage()      .openPage(209)
+                              .editContractor();
+    app.createContractorPage().fillFullNameContractor("Тест")
+                              .selectSECategory()
+                              .fillInn("123465789912");
+    app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
+    app.createContractorPage().fillNote("Примечание")
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
+  }
+
 
 }

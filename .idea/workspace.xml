@@ -1,345 +1,832 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </select>
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="Начало просмотр документов" />
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1ppKdVSeHIcCsYhF2Z59c0JhtBp" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="ToolWindowRun.ShowToolbar" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CRC-main" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
-    <property name="show.unlinked.gradle.project.popup" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\test\java" />
-      <recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\test" />
-      <recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\main" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="data" />
-    </key>
-  </component>
-  <component name="RunManager" selected="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml">
-    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.invalidPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests.invalidPassword&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.newSessionInnerUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests.newSessionInnerUser&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CRC_Tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/loginData.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/resources/loginData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CRC_Tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/loginData.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml" />
-        <item itemvalue="Gradle.LoginTests.newSessionInnerUser" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.invalidPassword" />
-        <item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/resources/loginData.xml" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="" />
-      <created>1615874678500</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1615874678500</updated>
-      <workItem from="1632473309757" duration="3001000" />
-      <workItem from="1632735138867" duration="3187000" />
-      <workItem from="1632892744049" duration="2397000" />
-      <workItem from="1632910860605" duration="641000" />
-    </task>
-    <task id="LOCAL-00001" summary="Воркспейс">
-      <created>1632910925401</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1632910925401</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Начало просмотр документов">
-      <created>1632911124650</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1632911124650</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Воркспейс" />
-    <MESSAGE value="Начало просмотр документов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Начало просмотр документов" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="325" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632468005551">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="325" y="125" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1739.939@0.0.1739.939" timestamp="1632468005551" />
-    <state x="675" y="186" key="#com.intellij.ide.util.MemberChooser" timestamp="1628603022855">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="675" y="186" key="#com.intellij.ide.util.MemberChooser/0.0.1739.939@0.0.1739.939" timestamp="1628603022855" />
-    <state x="544" y="395" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628250548562">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="544" y="395" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1739.939@0.0.1739.939" timestamp="1628250548562" />
-    <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627895646882">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="404" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.939@0.0.1739.939" timestamp="1627895646882" />
-    <state x="600" y="217" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632210583383">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="600" y="217" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1739.939@0.0.1739.939" timestamp="1632210583383" />
-    <state x="605" y="327" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1631767611129">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="605" y="327" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939@0.0.1739.939" timestamp="1631767611129" />
-    <state x="718" y="249" key="FileChooserDialogImpl" timestamp="1632473347456">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1632301468582" />
-    <state x="718" y="249" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632473347456" />
-    <state width="1696" height="198" key="GridCell.Tab.0.bottom" timestamp="1632467776044">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="198" key="GridCell.Tab.0.center" timestamp="1632467776044">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="198" key="GridCell.Tab.0.left" timestamp="1632467776043">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1632467776043" />
-    <state width="1696" height="198" key="GridCell.Tab.0.right" timestamp="1632467776044">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="308" key="GridCell.Tab.1.bottom" timestamp="1632305913292">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.center" timestamp="1632305913292">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.center/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.left" timestamp="1632305913292">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.left/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.right" timestamp="1632305913292">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state x="418" y="99" key="SettingsEditor" timestamp="1632738535914">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="379" y="89" key="SettingsEditor/0.0.1739.939@0.0.1739.939" timestamp="1632205487545" />
-    <state x="418" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1632738535914" />
-    <state x="536" y="240" key="Vcs.Push.Dialog.v2" timestamp="1632475404380">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="536" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1632475404380" />
-    <state x="687" y="248" key="chooseDestDirectoryDialog" timestamp="1632157818825">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="687" y="248" key="chooseDestDirectoryDialog/0.0.1739.939@0.0.1739.939" timestamp="1632157818825" />
-    <state x="595" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1628074494411">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="595" y="362" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1739.939@0.0.1739.939" timestamp="1628074494411" />
-    <state x="753" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632475044392">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="753" y="421" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1632475044392" />
-    <state x="659" y="0" width="1277" height="983" key="dock-window-1" timestamp="1632898720556">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="659" y="0" width="1277" height="983" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1632898720556" />
-    <state x="584" y="66" width="575" height="873" key="find.popup" timestamp="1627287979714">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="584" y="66" width="575" height="873" key="find.popup/0.0.1739.939@0.0.1739.939" timestamp="1627287979714" />
-    <state x="577" y="218" key="refactoring.ChangeSignatureDialog" timestamp="1627894326132">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="577" y="218" key="refactoring.ChangeSignatureDialog/0.0.1739.939@0.0.1739.939" timestamp="1627894326132" />
-    <state x="527" y="216" key="run.anything.popup" timestamp="1631767579961">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="527" y="216" key="run.anything.popup/0.0.1739.939@0.0.1739.939" timestamp="1631767579961" />
-    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup" timestamp="1628580243585">
-      <screen x="0" y="0" width="1739" height="939" />
-    </state>
-    <state x="532" y="200" width="672" height="678" key="search.everywhere.popup/0.0.1739.939@0.0.1739.939" timestamp="1628580243585" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CRC_Tests$C__Users_1283181_Documents_GitHub_CRC_Tests_src_test_java_resources_loginData_xml.ic" NAME="$PROJECT_DIR$/src/test/java/resources/loginData.xml Coverage Results" MODIFIED="1632205456255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
+
+-<project version="4">
+
+
+-<component name="BranchesTreeState">
+
+
+-<expand>
+
+
+-<path>
+
+<item name="ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+</path>
+
+
+-<path>
+
+<item name="ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+</path>
+
+
+-<path>
+
+<item name="ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor"/>
+
+</path>
+
+</expand>
+
+
+-<select>
+
+
+-<path>
+
+<item name="ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor"/>
+
+<item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor"/>
+
+</path>
+
+</select>
+
+</component>
+
+
+-<component name="ChangeListManager">
+
+
+-<list name="Default Changelist" comment="" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" default="true">
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" beforePath="$PROJECT_DIR$/.idea/workspace.xml"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/HelperBase.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/HelperBase.java"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateContractorPage.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateContractorPage.java"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateDocumentPage.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateDocumentPage.java"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/LoginPage.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/LoginPage.java"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorEditTests.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorEditTests.java"/>
+
+<change afterDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/ExpenditureContractCreateTests.java" beforeDir="false" beforePath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/ExpenditureContractCreateTests.java"/>
+
+</list>
+
+<option name="SHOW_DIALOG" value="false"/>
+
+<option name="HIGHLIGHT_CONFLICTS" value="true"/>
+
+<option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false"/>
+
+<option name="LAST_RESOLUTION" value="IGNORE"/>
+
+</component>
+
+
+-<component name="ExternalProjectsData">
+
+
+-<projectState path="$PROJECT_DIR$">
+
+<ProjectState/>
+
+</projectState>
+
+</component>
+
+
+-<component name="ExternalProjectsManager">
+
+
+-<system id="GRADLE">
+
+
+-<state>
+
+
+-<task path="$PROJECT_DIR$">
+
+<activation/>
+
+</task>
+
+
+-<projects_view>
+
+
+-<tree_state>
+
+
+-<expand>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+</path>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+<item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode"/>
+
+</path>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+<item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode"/>
+
+<item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode"/>
+
+</path>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+<item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode"/>
+
+<item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode"/>
+
+<item name="io.qameta.allure:allure-testng:2.14.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode"/>
+
+</path>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+<item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode"/>
+
+<item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode"/>
+
+<item name="io.qameta.allure:allure-testng:2.14.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode"/>
+
+<item name="io.qameta.allure:allure-java-commons:2.14.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode"/>
+
+</path>
+
+
+-<path>
+
+<item name="" type="6a2764b6:ExternalProjectsStructure$RootNode"/>
+
+<item name="CRC Tests" type="f1a62948:ProjectNode"/>
+
+<item name="Run Configurations" type="7b0102dc:RunConfigurationsNode"/>
+
+</path>
+
+</expand>
+
+<select/>
+
+</tree_state>
+
+</projects_view>
+
+</state>
+
+</system>
+
+</component>
+
+
+-<component name="FileTemplateManagerImpl">
+
+
+-<option name="RECENT_TEMPLATES">
+
+
+-<list>
+
+<option value="Enum"/>
+
+<option value="Class"/>
+
+</list>
+
+</option>
+
+</component>
+
+
+-<component name="Git.Settings">
+
+<option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$"/>
+
+</component>
+
+<component name="ProjectId" id="1ppKdVSeHIcCsYhF2Z59c0JhtBp"/>
+
+
+-<component name="ProjectViewState">
+
+<option name="hideEmptyMiddlePackages" value="true"/>
+
+<option name="showLibraryContents" value="true"/>
+
+</component>
+
+
+-<component name="PropertiesComponent">
+
+<property name="Downloaded.Files.Path.Enabled" value="false"/>
+
+<property name="Repository.Attach.Annotations" value="false"/>
+
+<property name="Repository.Attach.JavaDocs" value="false"/>
+
+<property name="Repository.Attach.Sources" value="false"/>
+
+<property name="RunOnceActivity.OpenProjectViewOnStart" value="true"/>
+
+<property name="RunOnceActivity.ShowReadmeOnStart" value="true"/>
+
+<property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true"/>
+
+<property name="ToolWindowRun.ShowToolbar" value="false"/>
+
+<property name="WebServerToolWindowFactoryState" value="false"/>
+
+<property name="aspect.path.notification.shown" value="true"/>
+
+<property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../JavaLearning"/>
+
+<property name="project.structure.last.edited" value="Project"/>
+
+<property name="project.structure.proportion" value="0.15"/>
+
+<property name="project.structure.side.proportion" value="0.2"/>
+
+<property name="settings.editor.selected.configurable" value="preferences.pathVariables"/>
+
+<property name="show.unlinked.gradle.project.popup" value="true"/>
+
+</component>
+
+
+-<component name="RecentsManager">
+
+
+-<key name="MoveFile.RECENT_KEYS">
+
+<recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\test\java"/>
+
+<recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\test"/>
+
+<recent name="C:\Users\1283181\Documents\GitHub\CRC Tests\src\main"/>
+
+</key>
+
+
+-<key name="CreateClassDialog.RecentsKey">
+
+<recent name="data"/>
+
+</key>
+
+</component>
+
+
+-<component name="RunManager" selected="Gradle.ExpenditureContractCreateTests.createContractWithoutAddress">
+
+
+-<configuration name="ContractorEditTests.editYurContractor" type="GradleRunConfiguration" temporary="true" factoryName="Gradle">
+
+
+-<ExternalSystemSettings>
+
+<option name="executionName"/>
+
+<option name="externalProjectPath" value="$PROJECT_DIR$"/>
+
+<option name="externalSystemIdString" value="GRADLE"/>
+
+<option name="scriptParameters" value="--tests "tests.ContractorsTests.ContractorEditTests.editYurContractor""/>
+
+
+-<option name="taskDescriptions">
+
+<list/>
+
+</option>
+
+
+-<option name="taskNames">
+
+
+-<list>
+
+<option value=":test"/>
+
+</list>
+
+</option>
+
+<option name="vmOptions"/>
+
+</ExternalSystemSettings>
+
+<GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+
+<method v="2"/>
+
+</configuration>
+
+
+-<configuration name="ExpenditureContractCreateTests" type="GradleRunConfiguration" temporary="true" factoryName="Gradle">
+
+
+-<ExternalSystemSettings>
+
+<option name="executionName"/>
+
+<option name="externalProjectPath" value="$PROJECT_DIR$"/>
+
+<option name="externalSystemIdString" value="GRADLE"/>
+
+<option name="scriptParameters" value="--tests "tests.DocumentsTests.ExpenditureContractCreateTests""/>
+
+
+-<option name="taskDescriptions">
+
+<list/>
+
+</option>
+
+
+-<option name="taskNames">
+
+
+-<list>
+
+<option value=":test"/>
+
+</list>
+
+</option>
+
+<option name="vmOptions"/>
+
+</ExternalSystemSettings>
+
+<GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+
+<method v="2"/>
+
+</configuration>
+
+
+-<configuration name="ExpenditureContractCreateTests.createContractWithoutAddress" type="GradleRunConfiguration" temporary="true" factoryName="Gradle">
+
+
+-<ExternalSystemSettings>
+
+<option name="executionName"/>
+
+<option name="externalProjectPath" value="$PROJECT_DIR$"/>
+
+<option name="externalSystemIdString" value="GRADLE"/>
+
+<option name="scriptParameters" value="--tests "tests.DocumentsTests.ExpenditureContractCreateTests.createContractWithoutAddress""/>
+
+
+-<option name="taskDescriptions">
+
+<list/>
+
+</option>
+
+
+-<option name="taskNames">
+
+
+-<list>
+
+<option value=":test"/>
+
+</list>
+
+</option>
+
+<option name="vmOptions"/>
+
+</ExternalSystemSettings>
+
+<GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+
+<method v="2"/>
+
+</configuration>
+
+
+-<configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/contractorData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+
+<module name="CRC_Tests.test"/>
+
+<option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/contractorData.xml"/>
+
+<option name="TEST_OBJECT" value="SUITE"/>
+
+<properties/>
+
+<listeners/>
+
+
+-<method v="2">
+
+<option name="Make" enabled="true"/>
+
+</method>
+
+</configuration>
+
+
+-<configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+
+<module name="CRC_Tests.test"/>
+
+<option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/loginData.xml"/>
+
+<option name="TEST_OBJECT" value="SUITE"/>
+
+<properties/>
+
+<listeners/>
+
+
+-<method v="2">
+
+<option name="Make" enabled="true"/>
+
+</method>
+
+</configuration>
+
+
+-<recent_temporary>
+
+
+-<list>
+
+<item itemvalue="Gradle.ExpenditureContractCreateTests.createContractWithoutAddress"/>
+
+<item itemvalue="Gradle.ExpenditureContractCreateTests"/>
+
+<item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/contractorData.xml"/>
+
+<item itemvalue="Gradle.ContractorEditTests.editYurContractor"/>
+
+<item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml"/>
+
+</list>
+
+</recent_temporary>
+
+</component>
+
+
+-<component name="SvnConfiguration">
+
+<configuration/>
+
+</component>
+
+
+-<component name="TaskManager">
+
+
+-<task id="Default" summary="Default task" active="true">
+
+<changelist name="Default Changelist" comment="" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21"/>
+
+<created>1615874678500</created>
+
+<option name="number" value="Default"/>
+
+<option name="presentableId" value="Default"/>
+
+<updated>1615874678500</updated>
+
+<workItem duration="1447000" from="1632473309757"/>
+
+</task>
+
+<servers/>
+
+</component>
+
+
+-<component name="TypeScriptGeneratedFilesManager">
+
+<option name="version" value="2"/>
+
+</component>
+
+
+-<component name="Vcs.Log.Tabs.Properties">
+
+
+-<option name="TAB_STATES">
+
+
+-<map>
+
+
+-<entry key="MAIN">
+
+
+-<value>
+
+
+-<State>
+
+
+-<option name="FILTERS">
+
+
+-<map>
+
+
+-<entry key="branch">
+
+
+-<value>
+
+
+-<list>
+
+<option value="origin/main"/>
+
+</list>
+
+</value>
+
+</entry>
+
+</map>
+
+</option>
+
+</State>
+
+</value>
+
+</entry>
+
+</map>
+
+</option>
+
+<option name="oldMeFiltersMigrated" value="true"/>
+
+</component>
+
+
+-<component name="VcsManagerConfiguration">
+
+<option name="LAST_COMMIT_MESSAGE" value=""/>
+
+</component>
+
+
+-<component name="WindowStateProjectService">
+
+
+-<state key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632468005551" y="125" x="325">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1739.939@0.0.1739.939" timestamp="1632468005551" y="125" x="325"/>
+
+
+-<state key="#com.intellij.ide.util.MemberChooser" timestamp="1628603022855" y="186" x="675">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="#com.intellij.ide.util.MemberChooser/0.0.1739.939@0.0.1739.939" timestamp="1628603022855" y="186" x="675"/>
+
+
+-<state key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1628250548562" y="395" x="544">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1739.939@0.0.1739.939" timestamp="1628250548562" y="395" x="544"/>
+
+
+-<state key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1627895646882" y="0" x="404">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1739.939@0.0.1739.939" timestamp="1627895646882" y="0" x="404"/>
+
+
+-<state key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632210583383" y="217" x="600">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1739.939@0.0.1739.939" timestamp="1632210583383" y="217" x="600"/>
+
+
+-<state key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1631767611129" y="327" x="605">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939@0.0.1739.939" timestamp="1631767611129" y="327" x="605"/>
+
+
+-<state key="FileChooserDialogImpl" timestamp="1632764005698" y="225" x="650">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1632764005698" y="225" x="650"/>
+
+<state key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632473347456" y="249" x="718"/>
+
+
+-<state key="GridCell.Tab.0.bottom" timestamp="1632853887517" height="198" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" height="198" width="1696"/>
+
+
+-<state key="GridCell.Tab.0.center" timestamp="1632853887517" height="198" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" height="198" width="1696"/>
+
+
+-<state key="GridCell.Tab.0.left" timestamp="1632853887517" height="198" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" height="198" width="1696"/>
+
+
+-<state key="GridCell.Tab.0.right" timestamp="1632853887517" height="198" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" height="198" width="1696"/>
+
+
+-<state key="GridCell.Tab.1.bottom" timestamp="1632737418289" height="308" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.1.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" height="308" width="1696"/>
+
+
+-<state key="GridCell.Tab.1.center" timestamp="1632737418289" height="308" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.1.center/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" height="308" width="1696"/>
+
+
+-<state key="GridCell.Tab.1.left" timestamp="1632737418289" height="308" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.1.left/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" height="308" width="1696"/>
+
+
+-<state key="GridCell.Tab.1.right" timestamp="1632737418289" height="308" width="1696">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" height="308" width="1696"/>
+
+
+-<state key="SettingsEditor" timestamp="1632205487545" y="89" x="379">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="SettingsEditor/0.0.1739.939@0.0.1739.939" timestamp="1632205487545" y="89" x="379"/>
+
+
+-<state key="chooseDestDirectoryDialog" timestamp="1632157818825" y="248" x="687">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="chooseDestDirectoryDialog/0.0.1739.939@0.0.1739.939" timestamp="1632157818825" y="248" x="687"/>
+
+
+-<state key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1628074494411" y="362" x="595">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1739.939@0.0.1739.939" timestamp="1628074494411" y="362" x="595"/>
+
+
+-<state key="find.popup" timestamp="1627287979714" y="66" x="584" height="873" width="575">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="find.popup/0.0.1739.939@0.0.1739.939" timestamp="1627287979714" y="66" x="584" height="873" width="575"/>
+
+
+-<state key="refactoring.ChangeSignatureDialog" timestamp="1627894326132" y="218" x="577">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="refactoring.ChangeSignatureDialog/0.0.1739.939@0.0.1739.939" timestamp="1627894326132" y="218" x="577"/>
+
+
+-<state key="run.anything.popup" timestamp="1631767579961" y="216" x="527">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="run.anything.popup/0.0.1739.939@0.0.1739.939" timestamp="1631767579961" y="216" x="527"/>
+
+
+-<state key="search.everywhere.popup" timestamp="1628580243585" y="200" x="532" height="678" width="672">
+
+<screen y="0" x="0" height="939" width="1739"/>
+
+</state>
+
+<state key="search.everywhere.popup/0.0.1739.939@0.0.1739.939" timestamp="1628580243585" y="200" x="532" height="678" width="672"/>
+
+</component>
+
+
+-<component name="com.intellij.coverage.CoverageDataManagerImpl">
+
+<SUITE COVERAGE_TRACING_ENABLED="false" COVERAGE_BY_TEST_ENABLED="false" RUNNER="idea" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" MODIFIED="1632205456255" NAME="$PROJECT_DIR$/src/test/java/resources/loginData.xml Coverage Results" FILE_PATH="coverage/CRC_Tests$C__Users_1283181_Documents_GitHub_CRC_Tests_src_test_java_resources_loginData_xml.ic"/>
+
+</component>
+
 </project>

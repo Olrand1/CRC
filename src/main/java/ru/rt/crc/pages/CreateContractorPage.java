@@ -33,6 +33,8 @@ public class CreateContractorPage<contractorName> extends HelperBase {
   WebElement IPCategory;
   @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/div/ul/li[3]")
   WebElement PHCategory;
+  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[3]/div[2]/div/div/div/ul/li[4]")
+  WebElement SECategory;
   @FindBy (xpath = "//label[text()='ИНН']/preceding-sibling::input")
   WebElement innElement;
   @FindBy (xpath = "//label[text()='Юридический адрес']/preceding-sibling::input")
@@ -98,6 +100,12 @@ public class CreateContractorPage<contractorName> extends HelperBase {
     categoryList.click();
     PHCategory.click();
     return this;
+  }
+
+  public CreateContractorPage selectSECategory() {
+    categoryList.click();
+    SECategory.click();
+    return  this;
   }
 
   public CreateContractorPage fillInn(String inn) {

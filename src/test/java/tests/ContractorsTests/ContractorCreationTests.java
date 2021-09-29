@@ -2,9 +2,9 @@ package tests.ContractorsTests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import tests.TestBase;
+
 
 public class ContractorCreationTests extends TestBase {
 
@@ -52,6 +52,22 @@ public class ContractorCreationTests extends TestBase {
             .fillInn("1234657899")
             .fillNote("Примечание");
     app.createContractorPage().fillContact("Тестов Тест Тестович",  "test@test.test");
+    app.createContractorPage().submitCreateContractor();
+    Thread.sleep(3000);
+    app.createContractorPage().checkCreateContractorMessage();
+  }
+
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Создание контрагента")
+  @Test(priority = 8)
+  public void createSEContractors() throws InterruptedException {
+    Thread.sleep(3000);
+    app.createContractorPage().openCreateContractPage()
+                              .fillFullNameContractor("Тест")
+                              .selectSECategory()
+                              .fillInn("1234567899")
+                              .fillNote("Примечание");
+    app.createContractorPage().fillContact("Тестов Тест Тестович", "test@test.test");
     app.createContractorPage().submitCreateContractor();
     Thread.sleep(3000);
     app.createContractorPage().checkCreateContractorMessage();
