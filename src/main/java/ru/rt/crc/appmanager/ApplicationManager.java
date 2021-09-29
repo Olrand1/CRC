@@ -26,6 +26,8 @@ public class ApplicationManager {
   private CreateContractorPage createContractorPage;
   private ContractorsPage contractorsPage;
   private ContractorPage contractorPage;
+  private DocumentPage documentPage;
+  private DocumentsPage documentsPage;
   private CreateDocumentPage createDocumentPage;
   private CreateTaskPage createTaskPage;
   private Dashboard dashboardPage;
@@ -84,6 +86,7 @@ public class ApplicationManager {
   public ContractorPage contractorPage() {
     return contractorPage;
   }
+  public DocumentPage documentPage(){return documentPage;}
 
   public CreateDocumentPage createDocumentPage() {
     return createDocumentPage;
