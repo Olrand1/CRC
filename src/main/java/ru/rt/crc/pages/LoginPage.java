@@ -13,7 +13,7 @@ public class LoginPage extends HelperBase {
   WebElement loginElement;
   @FindBy(xpath = "//label[text()='Пароль']/preceding-sibling::input")
   WebElement passwordElement;
-  @FindBy(xpath = "//button[text()='Войти']")
+  @FindBy(xpath = "//button/div[text()='Войти']")
   WebElement loginButtonElement;
   @FindBy(xpath = "//*[@id='root']/div[3]/div[1]/div[2]/div/form/div[3]")
   WebElement errorMessage;

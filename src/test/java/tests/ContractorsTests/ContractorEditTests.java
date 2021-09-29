@@ -1,48 +1,62 @@
 package tests.ContractorsTests;
 
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import tests.TestBase;
 
 public class ContractorEditTests extends TestBase {
 
+  @Parameters ({"yur_contractor_id", "yur_contractor_name", "yur_contractor_inn", "yur_contractor_ogrn", "yur_contractor_kpp", "yur_contractor_address"})
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Редактирование контрагента")
   @Test
-  public void editYurContractors() {
-    app.contractorPage()      .openPage(209)
-                              .editContractor();
-    app.createContractorPage().fillFullNameContractor("Тест")
+  public void editYurContractor(int id, String fullName, String inn, String ogrn, String kpp, String address) throws InterruptedException {
+    app.loginPage.login("nikitina-ar", "qwerty");
+    Thread.sleep(600);
+    app.contractorPage()      .openPage(id);
+    Thread.sleep(6000);
+
+    app.contractorPage()                          .editContractor();
+    app.createContractorPage().fillFullNameContractor(fullName)
                               .selectYurCategory()
-                              .fillYurInformation("1234657899", "1234567890123", "123456789","г. Пермь 80");
+                              .fillYurInformation(inn, ogrn, kpp,address);
     app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
     app.createContractorPage().fillNote("Примечание")
                               .submitCreateContractor()
                               .checkEditContractorMessage();
   }
 
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Редактирование контрагента")
   @Test
-  public void editPHContractors() {
+  public void editPHContractor() {
     app.contractorPage()      .openPage(209)
-            .editContractor();
+                              .editContractor();
     app.createContractorPage().fillFullNameContractor("Тест")
-            .selectPHCategory()
-            .fillInn("1234657899");
+                              .selectPHCategory()
+                              .fillInn("1234657899");
     app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
     app.createContractorPage().fillNote("Примечание")
-            .submitCreateContractor()
-            .checkEditContractorMessage();
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
   }
 
+  @Epic(value = "Контрагенты")
+  @Feature(value = "Редактирование контрагента")
   @Test
-  public void editIPContractors() {
+  public void editIPContractor() {
     app.contractorPage()      .openPage(209)
-            .editContractor();
+                              .editContractor();
     app.createContractorPage().fillFullNameContractor("Тест")
-            .selectIPCategory()
-            .fillInn("123465789912")
-            .fillOgrnip("1234657899");
+                              .selectIPCategory()
+                              .fillInn("123465789912")
+                              .fillOgrnip("1234657899");
     app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
     app.createContractorPage().fillNote("Примечание")
-            .submitCreateContractor()
-            .checkEditContractorMessage();
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
   }
 
 }

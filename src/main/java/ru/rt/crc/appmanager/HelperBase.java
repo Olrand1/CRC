@@ -57,6 +57,11 @@ public class HelperBase {
     webDriver.findElement(By.xpath("//span[text()='" + label + "']/preceding-sibling::input")).click();
   }
 
+  public void fillDate(String label, int value){
+    webDriver.findElement(By.xpath("//*/text()[normalize-space(.)='"+ label +"']/parent::")).click();
+    webDriver.findElement(By.xpath("//*/text()[normalize-space(.)='"+ value +"']/parent::")).click();
+  }
+
   public void typeNote(String value) {
     By locator = By.xpath("//label[text()='Примечание']/preceding-sibling::textarea");
     webDriver.findElement(locator).clear();

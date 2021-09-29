@@ -26,7 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="" />
+    <list default="true" id="3c1585f3-d0eb-482c-93b3-ea37a9c6db21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/HelperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/appmanager/HelperBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateContractorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateContractorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateDocumentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/CreateDocumentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/rt/crc/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorEditTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContractorsTests/ContractorEditTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/ExpenditureContractCreateTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/DocumentsTests/ExpenditureContractCreateTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +123,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../CRC-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../JavaLearning" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -132,13 +140,13 @@
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml">
-    <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ExpenditureContractCreateTests.createContractWithoutAddress">
+    <configuration name="ContractorEditTests.editYurContractor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContractorsTests.ContractorEditTests.editYurContractor&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -152,12 +160,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.invalidPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ExpenditureContractCreateTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests.invalidPassword&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.DocumentsTests.ExpenditureContractCreateTests&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -171,12 +179,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LoginTests.newSessionInnerUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ExpenditureContractCreateTests.createContractWithoutAddress" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.LoginTests.newSessionInnerUser&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.DocumentsTests.ExpenditureContractCreateTests.createContractWithoutAddress&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -189,6 +197,16 @@
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/contractorData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CRC_Tests.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/contractorData.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="CRC_Tests.test" />
@@ -200,23 +218,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/resources/loginData.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="CRC_Tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/loginData.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ExpenditureContractCreateTests.createContractWithoutAddress" />
+        <item itemvalue="Gradle.ExpenditureContractCreateTests" />
+        <item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/contractorData.xml" />
+        <item itemvalue="Gradle.ContractorEditTests.editYurContractor" />
         <item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/java/resources/loginData.xml" />
-        <item itemvalue="Gradle.LoginTests.newSessionInnerUser" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.invalidPassword" />
-        <item itemvalue="TestNG.C:/Users/1283181/Documents/GitHub/CRC Tests/src/test/resources/loginData.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -289,43 +297,43 @@
       <screen x="0" y="0" width="1739" height="939" />
     </state>
     <state x="605" y="327" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1739.939@0.0.1739.939" timestamp="1631767611129" />
-    <state x="718" y="249" key="FileChooserDialogImpl" timestamp="1632473347456">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="650" y="225" key="FileChooserDialogImpl" timestamp="1632764005698">
+      <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1632301468582" />
+    <state x="650" y="225" key="FileChooserDialogImpl/0.0.1739.939@0.0.1739.939" timestamp="1632764005698" />
     <state x="718" y="249" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632473347456" />
-    <state width="1696" height="198" key="GridCell.Tab.0.bottom" timestamp="1632467776044">
+    <state width="1696" height="198" key="GridCell.Tab.0.bottom" timestamp="1632853887517">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="198" key="GridCell.Tab.0.center" timestamp="1632467776044">
+    <state width="1696" height="198" key="GridCell.Tab.0.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" />
+    <state width="1696" height="198" key="GridCell.Tab.0.center" timestamp="1632853887517">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="198" key="GridCell.Tab.0.left" timestamp="1632467776043">
+    <state width="1696" height="198" key="GridCell.Tab.0.center/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" />
+    <state width="1696" height="198" key="GridCell.Tab.0.left" timestamp="1632853887517">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1632467776043" />
-    <state width="1696" height="198" key="GridCell.Tab.0.right" timestamp="1632467776044">
+    <state width="1696" height="198" key="GridCell.Tab.0.left/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" />
+    <state width="1696" height="198" key="GridCell.Tab.0.right" timestamp="1632853887517">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="198" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1632467776044" />
-    <state width="1696" height="308" key="GridCell.Tab.1.bottom" timestamp="1632305913292">
+    <state width="1696" height="198" key="GridCell.Tab.0.right/0.0.1739.939@0.0.1739.939" timestamp="1632853887517" />
+    <state width="1696" height="308" key="GridCell.Tab.1.bottom" timestamp="1632737418289">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.center" timestamp="1632305913292">
+    <state width="1696" height="308" key="GridCell.Tab.1.bottom/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" />
+    <state width="1696" height="308" key="GridCell.Tab.1.center" timestamp="1632737418289">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.center/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.left" timestamp="1632305913292">
+    <state width="1696" height="308" key="GridCell.Tab.1.center/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" />
+    <state width="1696" height="308" key="GridCell.Tab.1.left" timestamp="1632737418289">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.left/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
-    <state width="1696" height="308" key="GridCell.Tab.1.right" timestamp="1632305913292">
+    <state width="1696" height="308" key="GridCell.Tab.1.left/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" />
+    <state width="1696" height="308" key="GridCell.Tab.1.right" timestamp="1632737418289">
       <screen x="0" y="0" width="1739" height="939" />
     </state>
-    <state width="1696" height="308" key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632305913292" />
+    <state width="1696" height="308" key="GridCell.Tab.1.right/0.0.1739.939@0.0.1739.939" timestamp="1632737418289" />
     <state x="379" y="89" key="SettingsEditor" timestamp="1632205487545">
       <screen x="0" y="0" width="1739" height="939" />
     </state>

@@ -1,11 +1,9 @@
 package ru.rt.crc.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ru.rt.crc.appmanager.HelperBase;
-import ru.rt.crc.model.Contact;
 
 import static org.testng.AssertJUnit.assertEquals;
 
@@ -21,7 +19,7 @@ public class CreateContractorPage<contractorName> extends HelperBase {
   WebElement createMenuButton;
   @FindBy (xpath = "//div[@id='root']/div/div[2]/div[2]/div/div/div[3]")
   WebElement createContractorButton;
-  @FindBy (xpath = "//label[text()='Наименование полное']/preceding-sibling::input")
+  @FindBy (xpath = "//label[text()='Полное наименование']/preceding-sibling::input")
   WebElement fullNameContractorElement;
   @FindBy (xpath = "//label[text()='Наименование краткое (необязательно)']/preceding-sibling::input")
   WebElement shortNameContractorElement;
@@ -43,7 +41,7 @@ public class CreateContractorPage<contractorName> extends HelperBase {
   WebElement OgrnipElement;
   @FindBy (xpath = "//label[text()='КПП']/preceding-sibling::input")
   WebElement kppElement;
-  @FindBy (xpath = "//div[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div/div/div/input")
+  @FindBy (xpath = "//*[@id=\"root\"]/div[3]/div[3]/form/div/div[2]/div/div[5]/div/div/div/input")
   WebElement OPFElement;
   @FindBy (xpath = "//*[@id='root']/div/div[3]/form/div/div[2]/div/div[5]/div[2]/div/div/div/ul/li[1]")
   WebElement OOOElement;
