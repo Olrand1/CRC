@@ -59,4 +59,18 @@ public class ContractorEditTests extends TestBase {
                               .checkEditContractorMessage();
   }
 
+  @Test
+  public void editSEContractors() {
+    app.contractorPage()      .openPage(209)
+                              .editContractor();
+    app.createContractorPage().fillFullNameContractor("Тест")
+                              .selectSECategory()
+                              .fillInn("123465789912");
+    app.createContractorPage().fillContact("Тестов Тест Тестович", "+79523386625", "test@test.test");
+    app.createContractorPage().fillNote("Примечание")
+                              .submitCreateContractor()
+                              .checkEditContractorMessage();
+  }
+
+
 }
