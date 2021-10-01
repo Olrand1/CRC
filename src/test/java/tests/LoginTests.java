@@ -8,7 +8,7 @@ public class LoginTests extends TestBase {
 
   @Parameters ({"correct_login", "fail_password"})
   @Feature(value = "Авторизация")
-  @Test(priority = 1)
+  @Test(priority = 1, groups = "Login")
   public void invalidPassword(String login, String password) throws InterruptedException {
     app.loginPage.login(login, password);
     Thread.sleep(600);
@@ -18,16 +18,18 @@ public class LoginTests extends TestBase {
   @Parameters ({"block_user", "correct_password"})
   @Feature(value = "Авторизация")
   @Test(priority = 2)
-  public void blockUser(String login, String password) {
+  public void blockUser(String login, String password) throws InterruptedException {
     app.loginPage.login(login, password);
+    Thread.sleep(1200);
     app.loginPage.checkMessage("Пользователь с логином block_user заблокирован");
   }
 
   @Parameters ({"fail_user", "correct_password"})
   @Feature(value = "Авторизация")
   @Test(priority = 3)
-  public void nonExistUser(String login, String password) {
+  public void nonExistUser(String login, String password) throws InterruptedException {
     app.loginPage.login(login, password);
+    Thread.sleep(600);
     app.loginPage.checkMessage("Пользователь с логином fail_user не найден");
   }
 

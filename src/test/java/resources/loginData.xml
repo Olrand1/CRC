@@ -5,7 +5,7 @@
     <parameter name="block_user" value="block_user"></parameter>
     <parameter name="fail_user" value="fail_user"></parameter>
     <parameter name="correct_password" value="qwerty"></parameter>
-    <parameter name="fail_password" value="fail_password"></parameter>
+    <parameter name="fail_password" value="qwerty1"></parameter>
     <test name="LoginTests">
         <classes>
             <class name="tests.LoginTests"/>

@@ -5,9 +5,15 @@ import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
 import tests.TestBase;
 
+import java.io.File;
+
 public class ExpenditureContractCreateTests extends TestBase {
 
-  String documentType = "Договор";
+  private String documentType = "Договор";
+  private String additionalDocument = "Прочее";
+  private File mainFile = new File ("src\\test\\java\\resources\\files\\mainDocument.pdf");
+  private File additionalFile = new File ("src\\test\\java\\resources\\files\\additionalDocument.doc");
+
 
   @Epic(value = "Расходные документы")
   @Feature(value = "Создание расходного договора. Предмет договора не требует указания адреса")
@@ -16,7 +22,7 @@ public class ExpenditureContractCreateTests extends TestBase {
     app.loginPage().login("nikitina-ar", "qwerty");
     Thread.sleep(6000);
     app.createDocumentPage().openCreateContractPage()
-            .addFile(documentType)
+            .addFile(documentType, mainFile)
             .goToNextStep();
     Thread.sleep(900);
     app.createDocumentPage().fillDepartment("Региональный центр развития информационных систем (г. Пермь) РИЗП-0333")
@@ -26,7 +32,7 @@ public class ExpenditureContractCreateTests extends TestBase {
     app.createDocumentPage().selectContractor("Anderson Group")
             .goToNextStep();
     Thread.sleep(1200);
-    app.createDocumentPage().fillMaxSum("60000")
+    app.createDocumentPage().fillMaxSum("50000")
             .goToNextStep()
             .sentToAgreement();
   }
@@ -43,20 +49,32 @@ public class ExpenditureContractCreateTests extends TestBase {
   @Feature(value = "Создание расходного договора. Предмет договора требует указания адреса")
   @Test
   public void createContractWithAddress() throws InterruptedException {
+    app.loginPage().login("nikitina-ar", "qwerty");
     Thread.sleep(9000);
     app.createDocumentPage().openCreateContractPage()
-            .addFile(documentType)
+            .addFile(documentType, mainFile)
+            .addFile(additionalDocument, additionalFile)
             .goToNextStep();
-    Thread.sleep(900);
-    app.createDocumentPage().fillDepartment("Финансово-экономический блок РИЗП-0131")
+    Thread.sleep(2000);
+    app.createDocumentPage().fillDatesOfDocument(1, 28)
+            .fillSignDate(2)
+            .fillDocNumber("1111")
+            .checkResponsible("Никитина Аделия")
+            .isFramedTrue()
+            .fillDepartment("Финансово-экономический блок РИЗП-0131")
             .fillSubjectDoc("Аренда прочих основных средств")
             .fillAddress("Город", "г. Пермь")
             .goToNextStep();
-    Thread.sleep(900);
+    Thread.sleep(9000);
     app.createDocumentPage().selectContractor("Asroeria")
+            .addContact("Тестов", "79523386625" , "test@test.ru")
             .goToNextStep();
     Thread.sleep(900);
     app.createDocumentPage().fillMaxSum("60000")
+            .selectPiuItem("E10402")
+            .selectDdsItem("P101")
+            .fillSecuritySum("1000")
+            .fillMonthSum("1000")
             .goToNextStep()
             .sentToAgreement();
   }
@@ -76,7 +94,7 @@ public class ExpenditureContractCreateTests extends TestBase {
   public void createRentContract() throws InterruptedException {
     Thread.sleep(9000);
     app.createDocumentPage().openCreateContractPage()
-            .addFile(documentType)
+            .addFile(documentType, mainFile)
             .goToNextStep();
     Thread.sleep(900);
     app.createDocumentPage().fillDepartment("Финансово-экономический блок РИЗП-0131")

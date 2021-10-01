@@ -11,7 +11,6 @@
     <parameter name="yur_contractor_kpp" value="123456789"></parameter>
     <parameter name="yur_contractor_address" value="г. Пермь 80"></parameter>
     <parameter name="yur_contractor_note" value="Примечание"></parameter>
-
     <test name="LoginTests">
         <classes>
             <class name="tests.ContractorsTests.ContractorEditTests"/>

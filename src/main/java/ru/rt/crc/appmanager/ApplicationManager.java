@@ -27,7 +27,7 @@ public class ApplicationManager {
   private ContractorsPage contractorsPage;
   private ContractorPage contractorPage;
   private DocumentPage documentPage;
-  private DocumentsPage documentsPage;
+  //private DocumentsPage documentsPage;
   private CreateDocumentPage createDocumentPage;
   private CreateTaskPage createTaskPage;
   private Dashboard dashboardPage;

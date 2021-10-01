@@ -15,7 +15,7 @@ public class LoginPage extends HelperBase {
   WebElement passwordElement;
   @FindBy(xpath = "//button/div[text()='Войти']")
   WebElement loginButtonElement;
-  @FindBy(xpath = "//*[@id='root']/div[3]/div[1]/div[2]/div/form/div[3]")
+  @FindBy(className = "FormLogin_errorMessage__3nf_X")
   WebElement errorMessage;
 
   public LoginPage(WebDriver webDriver) {
