@@ -1,11 +1,9 @@
-package tests.DocumentsTests;
+package ru.rt.crc.tests.DocumentsTests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
-import tests.TestBase;
-
-import java.util.concurrent.ExecutionException;
+import ru.rt.crc.tests.TestBase;
 
 public class DocumentViewTests extends TestBase {
 

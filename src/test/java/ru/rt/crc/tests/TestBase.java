@@ -1,4 +1,4 @@
-package tests;
+package ru.rt.crc.tests;
 
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;

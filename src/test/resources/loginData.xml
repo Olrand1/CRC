@@ -8,7 +8,7 @@
     <parameter name="fail_password" value="qwerty1"></parameter>
     <test name="LoginTests">
         <classes>
-            <class name="tests.LoginTests"/>
+            <class name="ru.rt.crc.tests.LoginTests"/>
         </classes>
     </test>
 </suite>

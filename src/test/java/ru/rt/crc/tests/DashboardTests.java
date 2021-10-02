@@ -1,4 +1,4 @@
-package tests;
+package ru.rt.crc.tests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;

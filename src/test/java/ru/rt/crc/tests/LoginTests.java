@@ -1,4 +1,4 @@
-package tests;
+package ru.rt.crc.tests;
 
 import io.qameta.allure.Feature;
 import org.testng.annotations.Parameters;

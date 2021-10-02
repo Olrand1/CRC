@@ -1,4 +1,4 @@
-package tests.api;
+package ru.rt.crc.tests.api;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

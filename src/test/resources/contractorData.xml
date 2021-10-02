@@ -13,7 +13,7 @@
     <parameter name="yur_contractor_note" value="Примечание"></parameter>
     <test name="LoginTests">
         <classes>
-            <class name="tests.ContractorsTests.ContractorEditTests"/>
+            <class name="ru.rt.crc.tests.ContractorsTests.ContractorEditTests"/>
         </classes>
     </test>
 </suite>

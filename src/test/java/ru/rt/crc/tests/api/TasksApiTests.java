@@ -1,4 +1,4 @@
-package tests.api;
+package ru.rt.crc.tests.api;
 
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;

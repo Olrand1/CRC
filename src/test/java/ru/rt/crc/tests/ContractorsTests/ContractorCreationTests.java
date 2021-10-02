@@ -1,9 +1,9 @@
-package tests.ContractorsTests;
+package ru.rt.crc.tests.ContractorsTests;
 
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import org.testng.annotations.Test;
-import tests.TestBase;
+import ru.rt.crc.tests.TestBase;
 
 
 public class ContractorCreationTests extends TestBase {
