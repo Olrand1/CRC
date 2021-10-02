@@ -14,8 +14,8 @@ public class CreateDocumentPage extends HelperBase {
   }
 
   // Общие элементы
-  protected final String createDocumentLink = "Документ";
   protected final String createMenuButton = "Создать";
+  protected final String createDocumentLink = "Документ";
   protected final String nextPageButton = "Далее";
   protected final String sentToAgreementButton = "Отправить на согласование";
   protected final String createDocumentButton = "Создать документ";
