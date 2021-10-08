@@ -10,7 +10,8 @@ import java.io.File;
 public class CorporateCard extends TestBase {
 
   String documentType = "Корпоративная карта";
-  private File mainFile = new File ("src\\test\\java\\resources\\files\\mainDocument.pdf");
+  private File mainFile = new File ("src\\test\\resources\\files\\mainDocument.pdf");
+  private File additionalFile = new File ("src\\test\\resources\\files\\additionalDocument.doc");
 
   @Epic(value = "Расходные документы")
   @Feature(value = "Создание корпоративной карты")

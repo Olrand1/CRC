@@ -51,8 +51,13 @@ public class HelperBase {
     webDriver.findElement(By.xpath("//*[text()='" + value + "']")).click();
   }
 
-  public void check(String placeholder, String value){
+  public void checkInput(String placeholder, String value){
     String currentValue = webDriver.findElement(By.xpath("//label[text()='" + placeholder + "']/preceding-sibling::input")).getAttribute("value");
+    assertEquals(currentValue, value);
+  }
+
+  public void checkLabelElement(String placeholder, String value){
+    String currentValue = webDriver.findElement(By.xpath("//*[text()='" + placeholder + "']/following::div[1]")).getAttribute("value");
     assertEquals(currentValue, value);
   }
 

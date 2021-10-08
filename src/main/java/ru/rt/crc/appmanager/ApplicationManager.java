@@ -9,14 +9,15 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
-import ru.rt.crc.pages.*;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import ru.rt.crc.pages.*;
+
 
 public class ApplicationManager {
   public WebDriver webDriver;
@@ -86,6 +87,7 @@ public class ApplicationManager {
   public ContractorPage contractorPage() {
     return contractorPage;
   }
+
   public DocumentPage documentPage(){return documentPage;}
 
   public CreateDocumentPage createDocumentPage() {

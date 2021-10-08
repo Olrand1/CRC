@@ -11,8 +11,8 @@ public class ExpenditureContractCreateTests extends TestBase {
 
   private String documentType = "Договор";
   private String additionalDocument = "Прочее";
-  private File mainFile = new File ("src\\test\\java\\resources\\files\\mainDocument.pdf");
-  private File additionalFile = new File ("src\\test\\java\\resources\\files\\additionalDocument.doc");
+  private File mainFile = new File ("src\\test\\resources\\files\\mainDocument.pdf");
+  private File additionalFile = new File ("src\\test\\resources\\files\\additionalDocument.doc");
 
 
   @Epic(value = "Расходные документы")

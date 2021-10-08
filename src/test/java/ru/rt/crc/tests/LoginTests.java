@@ -4,6 +4,8 @@ import io.qameta.allure.Feature;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.UUID;
+
 public class LoginTests extends TestBase {
 
   @Parameters ({"correct_login", "fail_password"})

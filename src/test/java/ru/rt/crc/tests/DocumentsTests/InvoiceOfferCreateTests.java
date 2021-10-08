@@ -10,7 +10,8 @@ import java.io.File;
 public class InvoiceOfferCreateTests extends TestBase {
 
   String documentType = "Счет-оферта/счет без договора";
-  private File mainFile = new File ("src\\test\\java\\resources\\files\\mainDocument.pdf");
+  private File mainFile = new File ("src\\test\\resources\\files\\mainDocument.pdf");
+  private File additionalFile = new File ("src\\test\\resources\\files\\additionalDocument.doc");
 
   @Epic(value = "Расходные документы")
   @Feature(value = "Создание счет-оферты. Предмет договора не требует указания адреса")

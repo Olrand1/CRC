@@ -4,7 +4,6 @@ import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.rt.crc.appmanager.HelperBase;
-
 import java.io.File;
 
 public class CreateDocumentPage extends HelperBase {
