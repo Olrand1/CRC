@@ -11,12 +11,5 @@ public class DocumentPage extends HelperBase {
 
     public DocumentPage(WebDriver webDriver){super(webDriver);}
 
-    String URL = "http://crc-staging.dev.digital.rt.ru/documents/document_card/";
-
-    @FindBy(className = "")
-    WebElement fullNameDocumentElement;
-    @FindBy(className = "")
-    WebElement dateCreateElement;
-    @FindBy(xpath = "")
-    WebElement element;
+//чистка ненужного
 }
